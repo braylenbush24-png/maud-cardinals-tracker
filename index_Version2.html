@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maud Cardinals Basketball Tracker - 2026-2027</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/cardinals-logo.png" alt="Cardinals Logo" class="logo">
+            <h1>Maud Cardinals Basketball</h1>
+            <p class="season">2026-2027 Season</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Team Record Section -->
+        <section class="team-record">
+            <h2>Team Record</h2>
+            <div class="record-display">
+                <div class="record">
+                    <span class="wins" id="wins">0</span>
+                    <span class="separator">-</span>
+                    <span class="losses" id="losses">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coach Information -->
+        <section class="coach-info">
+            <h2>Head Coach</h2>
+            <div class="coach-card">
+                <h3>Charles Bush</h3>
+                <p><strong>Career Achievement:</strong> District Championship Team (2025-2026)</p>
+            </div>
+        </section>
+
+        <!-- Team Stats Section -->
+        <section class="team-stats">
+            <h2>Team Statistics</h2>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Stat</th>
+                        <th>Per Game</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Points Scored Per Game (PPG)</td>
+                        <td id="team-ppg">0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Points Allowed Per Game</td>
+                        <td id="team-pag">0.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Player Roster Section -->
+        <section class="player-roster">
+            <h2>Player Roster & Statistics</h2>
+            <div class="roster-container" id="roster-container">
+                <!-- Players will be populated here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Game Schedule & Opponent Stats -->
+        <section class="opponent-stats">
+            <h2>Games vs. Opponents</h2>
+            <table class="opponent-table" id="opponent-table">
+                <thead>
+                    <tr>
+                        <th>Opponent</th>
+                        <th>W/L</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="opponent-tbody">
+                    <!-- Opponent records will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add Game Form -->
+        <section class="add-game">
+            <h2>Add Game Result</h2>
+            <form id="add-game-form">
+                <div class="form-group">
+                    <label for="opponent-name">Opponent:</label>
+                    <input type="text" id="opponent-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardinals-score">Cardinals Score:</label>
+                    <input type="number" id="cardinals-score" required>
+                </div>
+                <div class="form-group">
+                    <label for="opponent-score">Opponent Score:</label>
+                    <input type="number" id="opponent-score" required>
+                </div>
+                <button type="submit" class="btn-submit">Add Game</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Website created by Braylen Bush</p>
+        <p>&copy; 2026-2027 Maud Cardinals Basketball</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
